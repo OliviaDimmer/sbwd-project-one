@@ -1,30 +1,77 @@
-body {
-    background-color: ;
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
 
-h1 {
-    color: ;
-    margin-left: ;
+
+body {
+
 }
+
+h1, h2, h3, h4, subtitle {
+  margin: 20px;
+
+}
+
+h3 {
+
+}
+
+h1, h4, subtitle {
+  color: white;
+}
+
 
 p {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 4.4vw;
+	font-size: ;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 100;
-	line-height: 20px;
-	color: white;
+	font-weight: normal;
+	line-height: 30px;
+	color: black;
+}
+
+li {
+  margin: 20px;
+
+}
+
+section {
+
 }
 
 .Top {
-  margin: auto;
+
+}
+
+.Background {
+	background-color: black;
+  width: 100%;
+  margin: 0;
+
 }
 
 .Middle {
+  margin-top: 100px;
+  margin-bottom:  100px;
+}
+
+
+.Clips {
+  margin-top: 100px;
+  margin-bottom:  100px;
 
 }
 
-.Clips {
+.img {
 
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+
+}
+
+footer{
+
+  text-decoration: none;
 }
