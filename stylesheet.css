@@ -1,8 +1,8 @@
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
 
 }
-
 
 body {
 margin: 0;
@@ -62,7 +62,6 @@ li {
 }
 
 .img {
-
     width:  100%;
     display: block;
 
@@ -70,5 +69,4 @@ li {
 
 footer{
 
-  text-decoration: none;
 }
