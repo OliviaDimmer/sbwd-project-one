@@ -36,20 +36,17 @@ li {
 
 }
 
-section {
+.header-text {
+  color: white;
 
 }
 
 .Top {
-
-}
-
-.Background {
-	background-color: black;
+  background-color: black;
   width: 100%;
   margin: 0;
-
 }
+
 
 .Middle {
   margin-top: 100px;
@@ -68,6 +65,7 @@ section {
     width:  100px;
     height: 100px;
     object-fit: cover;
+    display: block;
 
 }
 
