@@ -5,7 +5,7 @@ html {
 
 
 body {
-
+margin: 0;
 }
 
 h1, h2, h3, h4, subtitle {
@@ -38,13 +38,13 @@ li {
 
 .header-text {
   color: white;
+  margin: 20px;
 
 }
 
 .Top {
   background-color: black;
-  width: 100%;
-  margin: 0;
+  overflow: auto;
 }
 
 
@@ -57,14 +57,13 @@ li {
 .Clips {
   margin-top: 100px;
   margin-bottom:  100px;
+  background-color: black;
 
 }
 
 .img {
 
-    width:  100px;
-    height: 100px;
-    object-fit: cover;
+    width:  100%;
     display: block;
 
 }
