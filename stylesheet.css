@@ -31,6 +31,14 @@ p {
 
 }
 
+figcaption {
+
+  color:white;
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 li {
   margin: 20px;
 
@@ -42,28 +50,34 @@ li {
 
 }
 
-.Top {
+.top {
   background-color: black;
   overflow: auto;
 }
 
 
-.Middle {
+.middle {
   margin-top: 100px;
   margin-bottom:  100px;
+  overflow: auto;
 }
 
 
-.Clips {
+.clips {
   margin-top: 100px;
   margin-bottom:  100px;
   background-color: black;
 
 }
 
-.img {
-    max-width:  100%;
+figure {
+    width:  100%;
     display: block;
+
+}
+
+img {
+    width: 50%;
 
 }
 
