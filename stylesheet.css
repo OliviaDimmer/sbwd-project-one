@@ -1,6 +1,7 @@
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
+  line-height: 1.2em;
 
 }
 
@@ -10,6 +11,7 @@ margin: 0;
 
 h1, h2, h3, h4, subtitle {
   margin: 20px;
+  line-height: 1.2em;
 
 }
 
@@ -23,12 +25,10 @@ h1, h4, subtitle {
 
 
 p {
-	font-size: ;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: normal;
-	line-height: 30px;
+	font-size: 1.125em;
 	color: black;
+
+
 }
 
 li {
@@ -62,7 +62,7 @@ li {
 }
 
 .img {
-    width:  100%;
+    max-width:  100%;
     display: block;
 
 }
