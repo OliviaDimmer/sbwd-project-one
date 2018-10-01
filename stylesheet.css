@@ -2,21 +2,17 @@
 
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
   line-height: 1.2em;
-
 }
 
 body {
-margin: 0;
-text-decoration: none;
-
+  margin: 0;
+  text-decoration: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h4 {
   margin: 2em;
   line-height: 1.2em;
-
 }
 
 h1, h3, h4 {
@@ -25,41 +21,35 @@ h1, h3, h4 {
 
 h1 {
   font-weight: bold;
-  margin-top: 14em;
+  margin-top: 13em;
   line-height: 1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 2.6em;
 }
-
 
 p {
-	font-size: 1.125em;
-	color: black;
-
-
+  font-size: 1.125em;
+  color: black;
 }
 
-
 figcaption {
-
   color: black;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-top: 1em;
   padding-bottom: 1em;
-  text-decoration: none;
   line-height: normal;
-  width: 400px;
-
+  width: 17em;
 }
 
 li {
   margin: 1em;
-
-
-
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .intro {
@@ -67,10 +57,9 @@ ul {
   overflow: auto;
 }
 
-
 .resume {
   margin-top: 10em;
-  margin-bottom:  5em;
+  margin-bottom: 5em;
   overflow: auto;
   background-color: black;
   color: white;
@@ -78,47 +67,37 @@ ul {
 }
 
 .info {
-
-  margin: 5em;
+  margin-top: 3em;
 }
 
-
-
 .clips {
-  margin-top: 10em;
-  margin-bottom:  5em;
-
-
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .clip-gallery {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 100%;
-
-
-
-
 }
 
 figure {
-    width: 100%;
-    overflow: hidden;
-
-
+  width: 100%;
+  margin: 0;
 }
 
 img {
-    width: 100%;
-    box-shadow: 0 .5em 1em rgba(0, 0, 0, .25);
-    overflow:auto;
-    width: 25em;
-    height: 15em;
-
+  box-shadow: 0 .5em 1em rgba(0, 0, 0, .25);
+  overflow: auto;
+  width: 20em;
+  height: 12em;
+  transition: transform .2s;
 }
 
-footer{
-
+img:hover {
+  transform: scale(1.05);
 }
+
+footer {}
