@@ -1,8 +1,11 @@
-@import "compass/css3";
+/* <--- reset ---->  */
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
 
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 
 body {
@@ -10,20 +13,30 @@ body {
   text-decoration: none;
 }
 
-h1, h2, h4 {
-  margin: 2em;
+h2, h4 {
   line-height: 1.2em;
+  margin: 2vw;
+  font-weight: bold;
+    font-size: 2em;
+
 }
 
-h1, h3, h4 {
+h3, h4 {
   color: white;
+  font-weight: bold;
+    font-size: 2em;
+
 }
 
 h1 {
   font-weight: bold;
-  margin-top: 13em;
-  line-height: 1.5em;
-  margin-bottom: 2.6em;
+  margin-top: 70vh;
+  margin-bottom: 15vh;
+  font-size: 7vh;
+  font-size: 4vw;
+  color: white;
+  line-height: 1.2em;
+  margin-left: 2vw;
 }
 
 p {
@@ -37,15 +50,20 @@ figcaption {
   padding-top: 1em;
   padding-bottom: 1em;
   line-height: normal;
-  width: 17em;
+}
+
+figure {
+
+  max-width: 20em;
 }
 
 li {
-  margin: 1em;
+  margin: .5em;
 }
 
 ul {
   list-style: none;
+  margin: 2vw;
 }
 
 a {
@@ -55,12 +73,14 @@ a {
 .intro {
   background-color: black;
   overflow: auto;
+
+
 }
 
 .resume {
   margin-top: 10em;
   margin-bottom: 5em;
-  overflow: auto;
+  overflow: hidden;
   background-color: black;
   color: white;
   display: flex;
@@ -68,6 +88,8 @@ a {
 
 .info {
   margin-top: 3em;
+  display: flex;
+  flex-direction: column;
 }
 
 .clips {
@@ -79,13 +101,15 @@ a {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  justify-content: space-between;
+  justify-content: left;
   max-width: 100%;
+
 }
 
 figure {
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -101,3 +125,29 @@ img:hover {
 }
 
 footer {}
+
+
+/* media queries  */
+
+/* Smartphone----------- */
+@media only screen
+and (min-width : 320px)
+{
+/* Styles */
+
+
+}
+
+/* iPads  ----------- */
+@media only screen
+and (min-width : 768px)
+ {
+/* Styles */
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
