@@ -1,8 +1,44 @@
 /* <--- reset ---->  */
 /* stylelint-disable*/
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-/* stylelint-enable */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline
+}
 
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block
+}
+
+html {
+  line-height: 1
+}
+
+body {
+  line-height: inherit
+}
+
+ol, ul {
+  list-style: none
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+/* stylelint-enable */
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5em;
@@ -13,30 +49,32 @@ body {
   text-decoration: none;
 }
 
-h2, h4 {
-  line-height: 1.2em;
-  margin: 2vw;
-  font-weight: bold;
-    font-size: 2em;
+header p {
 
-}
-
-h3, h4 {
   color: white;
-  font-weight: bold;
-    font-size: 2em;
-
 }
 
 h1 {
   font-weight: bold;
   margin-top: 70vh;
-  margin-bottom: 15vh;
-  font-size: 7vh;
-  font-size: 4vw;
+  font-size: 5vw;
   color: white;
   line-height: 1.2em;
-  margin-left: 2vw;
+  margin-left: 1em;
+}
+
+h2 {
+  line-height: 1.2em;
+  margin: 1em;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 1em;
 }
 
 p {
@@ -53,7 +91,6 @@ figcaption {
 }
 
 figure {
-
   max-width: 20em;
 }
 
@@ -70,84 +107,87 @@ a {
   text-decoration: none;
 }
 
-.intro {
+header {
   background-color: black;
-  overflow: auto;
-
-
+  overflow: hidden;
+  height: 100vh;
 }
 
 .resume {
-  margin-top: 10em;
+  margin-top: 5em;
   margin-bottom: 5em;
-  overflow: hidden;
   background-color: black;
   color: white;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .info {
   margin-top: 3em;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 50%;
 }
 
 .clips {
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 3em;
 }
 
-.clip-gallery {
+.gallery {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  justify-content: left;
   max-width: 100%;
-
-}
-
-figure {
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 img {
-  box-shadow: 0 .5em 1em rgba(0, 0, 0, .25);
+  /* box-shadow: 0 .5em 1em rgba(0, 0, 0, .25); */
   overflow: auto;
   width: 20em;
   height: 12em;
   transition: transform .2s;
 }
 
-img:hover {
-  transform: scale(1.05);
+section ul h3 {
+
+  display: flex;
+  flex-direction: row;
 }
+
+/* img:hover {
+  transform: scale(1.05);
+} */
 
 footer {}
 
-
 /* media queries  */
-
 /* Smartphone----------- */
-@media only screen
-and (min-width : 320px)
-{
-/* Styles */
+@media screen and (min-width : 320px) {
+  /* Styles */
+   /* h1 {
+   margin-top: 3em;
+ }
 
+ img {
+   box-shadow: 0 .5em 1em rgba(0, 0, 0, .25);
+   overflow: auto;
+   width: 14em;
+   height: 9em;
+   transition: transform .2s;
+ }
+
+ figure {
+   width: 14em;
+ } */
 
 }
 
 /* iPads  ----------- */
-@media only screen
-and (min-width : 768px)
- {
-/* Styles */
+@media screen and (min-width : 768px) {
+  /* Styles */
 }
 
-
 /* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-/* Styles */
+@media  screen and (min-width : 1224px) {
+  /* Styles */
 }
