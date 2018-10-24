@@ -58,25 +58,23 @@ header p {
 
 h1 {
   font-weight: bold;
-  margin-top: 70vh;
-  font-size: 5vw;
+  font-size: 5em;
   color: white;
   line-height: 1.2em;
-  margin-left: 1em;
 }
 
 h2 {
   line-height: 1.2em;
-  margin: 1em;
   font-weight: bold;
   font-size: 2em;
+
 }
 
 h3 {
   color: white;
   font-weight: bold;
   font-size: 2em;
-  margin: 1em;
+  margin: 0 0 1em 0;
 }
 
 p {
@@ -92,18 +90,14 @@ figcaption {
   line-height: normal;
 }
 
-figure {
+.work {
   max-width: 20em;
-
-}
-
-li {
   margin: .5em;
 }
 
+
 ul {
   list-style: none;
-  margin: 2vw;
 }
 
 a {
@@ -121,10 +115,21 @@ header {
   margin-bottom: 5em;
   background-color: black;
   color: white;
+  display: flex;
+
 }
 
-.info {
-  margin-top: 3em;
+.list {
+flex-direction: row;
+flex-wrap: wrap;
+margin: 3em 2em 3em 2em;
+
+
+
+}
+
+.info li {
+   margin: 0 0 1em 0;
 
 }
 
