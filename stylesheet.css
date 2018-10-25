@@ -51,22 +51,25 @@ body {
   text-decoration: none;
 }
 
+
 header p {
 
   color: white;
 }
 
 h1 {
+  color: grey;
   font-weight: bold;
-  font-size: 5em;
-  color: white;
   line-height: 1.2em;
+  margin: 0 0 1em 0;
+
 }
 
 h2 {
   line-height: 1.2em;
   font-weight: bold;
   font-size: 2em;
+  margin: 2em 1em 2em 1em;
 
 }
 
@@ -74,7 +77,7 @@ h3 {
   color: white;
   font-weight: bold;
   font-size: 2em;
-  margin: 0 0 1em 0;
+  margin: 1em 0 1em 0;
 }
 
 p {
@@ -82,17 +85,21 @@ p {
   color: black;
 }
 
+.intro {
+
+  margin: 2em;
+}
+
 figcaption {
   color: black;
   font-size: 1.2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 0 1em 0;
   line-height: normal;
 }
 
 .work {
   max-width: 20em;
-  margin: .5em;
+
 }
 
 
@@ -102,6 +109,38 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+p > a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+p > a:hover {
+  color: #000;
+}
+
+p > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+p > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 header {
@@ -111,20 +150,9 @@ header {
 }
 
 .resume {
-  margin-top: 5em;
-  margin-bottom: 5em;
   background-color: black;
   color: white;
   display: flex;
-
-}
-
-.list {
-flex-direction: row;
-flex-wrap: wrap;
-margin: 3em 2em 3em 2em;
-
-
 
 }
 
@@ -133,8 +161,14 @@ margin: 3em 2em 3em 2em;
 
 }
 
+.experience, .education {
+  margin: 2em;
+  overflow: auto;
+}
+
+
 .clips {
-  margin-top: 3em;
+  margin: 0 3em 0 0;
 }
 
 .gallery {
@@ -142,7 +176,7 @@ margin: 3em 2em 3em 2em;
   flex-direction: row;
   flex-flow: wrap;
   max-width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 img {
@@ -153,31 +187,62 @@ img {
 
 }
 
-section ul h3 {
-
-  display: flex;
-  flex-direction: row;
-}
 
 img:hover {
   transform: scale(1.05);
 }
 
-footer {}
 
+footer {
+
+  margin: 2em;
+}
+
+footer h2 {
+
+  margin: 0 0 1em 0;
+}
 /* media queries  */
 /* Smartphone----------- */
 @media screen and (min-width : 320px) {
   /* Styles */
+
+  .resume {
+    background-color: black;
+    color: white;
+    display: block;
+    overflow: auto;
+    margin: 0 0 1em 0;
+  }
+
+  .education {
+    margin-bottom: 1em;
+  }
 
 }
 
 /* iPads  ----------- */
 @media screen and (min-width : 768px) {
   /* Styles */
+  .resume {
+    margin: 5em 0 5em 0;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+
 }
 
 /* Desktops and laptops ----------- */
 @media  screen and (min-width : 1224px) {
   /* Styles */
+
+  .resume {
+    margin: 5em 0 5em 0;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
 }
