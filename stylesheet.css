@@ -118,7 +118,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 p > a {
@@ -177,7 +176,7 @@ header {
 
 
 .clips {
-  margin: 0 3em 0 0;
+  margin: 0 2em 5em 0;
 }
 
 .gallery {
@@ -186,6 +185,7 @@ header {
   flex-flow: wrap;
   max-width: 100%;
   justify-content: space-evenly;
+  margin-bottom: 3em;
 }
 
 img {
@@ -201,9 +201,18 @@ img:hover {
   transform: scale(1.05);
 }
 
+.button {
+  background-color: black;
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .3em;
+  margin: 5em 2em 5em 2em;
+
+}
+
 
 footer {
-
   margin: 2em;
 }
 
@@ -211,6 +220,8 @@ footer h2 {
 
   margin: 2em 0 1em 0;
 }
+
+
 /* media queries  */
 /* Smartphone----------- */
 @media screen and (min-width : 320px) {
@@ -222,23 +233,29 @@ footer h2 {
     display: block;
     overflow: auto;
     margin: 0 0 1em 0;
+
   }
 
   .education {
     margin-bottom: 1em;
   }
 
+.gallery {
+
+margin-left: 2em;
+
+}
+
 }
 
 /* iPads  ----------- */
 @media screen and (min-width : 768px) {
   /* Styles */
-  .resume {
-    margin: 5em 0 5em 0;
-    background-color: black;
-    color: white;
-    display: flex;
-}
+  .gallery {
+
+  margin-left: 0em;
+
+  }
 
 
 }
@@ -246,12 +263,11 @@ footer h2 {
 /* Desktops and laptops ----------- */
 @media  screen and (min-width : 1224px) {
   /* Styles */
+  .gallery {
 
-  .resume {
-    margin: 5em 0 5em 0;
-    background-color: black;
-    color: white;
-    display: flex;
-}
+  margin-left: 0em;
+
+  }
+
 
 }
