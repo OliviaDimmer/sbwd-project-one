@@ -19,19 +19,23 @@
 
     // And then add the .js class to <html>:
     html_tag.classList.add('js');
-    var heading_label = 'Show More';
+    var heading_label = 'Show Less';
     var heading = document.querySelector('.show-more-section')
     var showButton = document.querySelector('.button')
     showButton.addEventListener('click',function(){
       var content = document.querySelector('.show-more-section');
       var label = document.querySelector('.button');
 
-      content.classList.toggle('visible');
+      content.classList.toggle('hidden');
 
       if (label.textContent === heading_label) {
-        label.textContent = 'Show Less';
-      } else {
+        console.log("We are getting rid of content")
+        label.textContent = 'Show More';
+        content.style.visibility='hidden'
+      }
+      else {
         label.textContent = heading_label;
+        content.style.visibility='visible'
       }
     })
   });

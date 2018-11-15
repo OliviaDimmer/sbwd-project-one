@@ -210,6 +210,9 @@ img:hover {
   margin: 5em 2em 5em 2em;
 
 }
+.show-more-section{
+  visibility: hidden;
+}
 
 
 footer {
