@@ -1,33 +1,40 @@
-(function (){
+console.log("hello World")
 
-  if (typeof document.querySelector === ‘undefined’) {
+(function(){
+  // Check to make sure essential features are supported
+  if (typeof document.querySelector === 'undefined') {
+    // No? Then bye!!!
+    return;
+  }
 
-  return;
-
-}
-
-  document.addeventlistener('DOMContentLoaded', function(){
+  document.addEventListener('DOMContentLoaded', function(){
+    // Diagnostic...make sure DOMContentLoaded has fired...
     console.log('OMG the DOM has loaded!');
+
+    // Grab the HTML element:
     var html_tag = document.querySelector('html');
-    html_tag.className = 'js'
+
+    // Go and remove the .nojs class from <html>...
     html_tag.classList.remove('nojs');
+
+    // And then add the .js class to <html>:
     html_tag.classList.add('js');
-    var heading_label = 'Show More'
-    var heading = document.querySelector('h1')
-    heading.innerHTML = '<a href="#content">Show More'
-    heading.addeventlistener('click', function(){
+    var heading_label = 'Show More';
+    var heading = document.querySelector('.show-more-section')
+    var showButton = document.querySelector('.button')
+    showButton.addEventListener('click',function(){
       var content = document.querySelector('#content');
       var label = document.querySelector('h1 a');
+
       content.classList.toggle('visible');
-      if (label.textContent === heading_label)
-      {
-        label.textContent = 'Show Less'
 
-}
+      if (label.textContent === heading_label) {
+        label.textContent = 'Show Less';
+      } else {
+        label.textContent = heading_label;
+      }
     })
-});
+  });
 
-
-
-  console.log(“Hello from Javascript!”)
+  console.log("Hello from JavaScript! You have querySelector!");
 })();
