@@ -24,9 +24,7 @@
     var showButton = document.querySelector('.button')
     showButton.addEventListener('click',function(){
       var content = document.querySelector('.show-more-section');
-      var label = document.querySelector('.button');
-
-      content.classList.toggle('hidden');
+      var label = document.querySelector('.button')
 
       if (label.textContent === heading_label) {
         console.log("We are getting rid of content")
