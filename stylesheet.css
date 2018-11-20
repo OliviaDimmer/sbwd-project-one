@@ -197,12 +197,12 @@ cursor:pointer;
 
 
 footer {
-  margin: 2em;
+  margin: 2em 2em 6em 2em;
 }
 
 footer h2 {
 
-  margin: 2em 0 1.5em 0;
+  margin: 1.5em 0 1.5em 0;
 }
 
 
@@ -265,9 +265,5 @@ margin-left: 2em;
     display: flex;
 }
 
-.logo {
- margin: 1em;
-
-}
 
 }
