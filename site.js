@@ -29,11 +29,11 @@
       if (label.textContent === heading_label) {
         console.log("We are getting rid of content")
         label.textContent = 'Show More';
-        content.style.visibility='hidden'
+        content.style.display='none'
       }
       else {
         label.textContent = heading_label;
-        content.style.visibility='visible'
+        content.style.display='flex'
       }
     })
   });

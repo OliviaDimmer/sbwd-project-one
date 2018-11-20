@@ -95,14 +95,13 @@ p {
 .intro {
 
   margin: 2em;
-
   margin-top: 65vh;
 }
 
 figcaption {
   color: black;
   font-size: 1.2em;
-  padding: 1em 0 1em 0;
+  padding: 1em 0 2em 0;
   line-height: normal;
 }
 
@@ -111,44 +110,18 @@ figcaption {
 
 }
 
-
-ul {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
 
 p > a {
   position: relative;
-  color: #000;
+  color: white;
   text-decoration: none;
-}
-
-p > a:hover {
-  color: #000;
-}
-
-p > a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-p > a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+  background-color: black;
+  padding: 1em;
+  font-weight: bold;
+  letter-spacing: .2em;
 }
 
 header {
@@ -176,7 +149,7 @@ header {
 
 
 .clips {
-  margin: 0 2em 5em 0;
+  margin: 0 2em 0 0;
 }
 
 .gallery {
@@ -185,7 +158,6 @@ header {
   flex-flow: wrap;
   max-width: 100%;
   justify-content: space-evenly;
-  margin-bottom: 3em;
 }
 
 img {
@@ -203,15 +175,24 @@ img:hover {
 
 .button {
   background-color: black;
-  padding: 1em;
-  color: white;
-  font-weight: bold;
-  letter-spacing: .3em;
-  margin: 5em 2em 5em 2em;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    width: 8.5em;
+    letter-spacing: .3em;
+    margin: 5em 3em 5em 2em;
+    text-align: center;
 
 }
+
+.button:hover {
+
+cursor:pointer;
+}
+
+
 .show-more-section{
-  visibility: hidden;
+  display: none;
 }
 
 
@@ -221,7 +202,7 @@ footer {
 
 footer h2 {
 
-  margin: 2em 0 1em 0;
+  margin: 2em 0 1.5em 0;
 }
 
 
@@ -282,6 +263,11 @@ margin-left: 2em;
     background-color: black;
     color: white;
     display: flex;
+}
+
+.logo {
+ margin: 1em;
+
 }
 
 }
