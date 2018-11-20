@@ -227,9 +227,14 @@ footer h2 {
 
 .gallery {
 
-margin-left: 2em;
+  margin-left: 2em;
 
 }
+
+footer {
+  margin: 2em 2em 10em 2em;
+}
+
 
 }
 
@@ -253,6 +258,9 @@ li {
   margin-left:1em;
 }
 
+footer {
+  margin: 2em 2em 6em 2em;
+}
 
 }
 
@@ -276,5 +284,8 @@ li {
   margin-left:1em;
 }
 
+footer {
+  margin: 2em 2em 6em 2em;
+}
 
 }
