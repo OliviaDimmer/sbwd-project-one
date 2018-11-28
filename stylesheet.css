@@ -106,7 +106,10 @@ figcaption {
 
 .work {
   max-width: 20em;
+}
 
+li {
+  margin-left: 2em;
 }
 
 a {
@@ -224,14 +227,14 @@ footer h2 {
     margin-bottom: 1em;
   }
 
-.gallery {
-
-  margin-left: 2em;
-
-}
-
 footer {
   margin: 2em 2em 10em 2em;
+}
+
+.showstyle {
+  height: 125em;
+  transition: 1.5s;
+  overflow: hidden;
 }
 
 
@@ -252,18 +255,27 @@ footer {
     display: flex;
 }
 
-li {
-
-  margin-left:2em;
-}
-
 footer {
   margin: 2em 2em 6em 2em;
+}
+
+.showstyle {
+  height: 61em;
+  transition: 1.5s;
+  overflow: hidden;
 }
 
 }
 
 /* Desktops and laptops ----------- */
+@media  screen and (min-width : 1061px) {
+  .showstyle {
+    height: 40em;
+    transition: 1.5s;
+    overflow: hidden;
+  }
+
+}
 @media  screen and (min-width : 1224px) {
   /* Styles */
   .gallery {
@@ -278,13 +290,14 @@ footer {
     display: flex;
 }
 
-li {
-
-  margin-left:1em;
-}
-
 footer {
   margin: 2em 2em 6em 2em;
+}
+
+.showstyle {
+  height: 40em;
+  transition: 1.5s;
+  overflow: hidden;
 }
 
 }
