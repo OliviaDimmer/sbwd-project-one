@@ -93,7 +93,6 @@ p {
 }
 
 .intro {
-
   margin: 2em;
   margin-top: 65vh;
 }
@@ -147,18 +146,12 @@ header {
   overflow: auto;
 }
 
-
-.clips {
-  margin: 0 2em 0 0;
-}
-
 .gallery {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
   max-width: 100%;
-  justify-content: space-evenly;
-  margin-left: 2em;
+  justify-content: flex-start;
 }
 
 img {
@@ -187,13 +180,19 @@ img:hover {
 }
 
 .button:hover {
-
 cursor:pointer;
 }
 
+.hidden{
+  height: 0;
+  overflow: hidden;
+  transition: 1.5s;
+}
 
-.show-more-section{
-  display: none;
+.showstyle {
+  height: 40em;
+  transition: 1.5s;
+  overflow: hidden;
 }
 
 
@@ -255,7 +254,7 @@ footer {
 
 li {
 
-  margin-left:1em;
+  margin-left:2em;
 }
 
 footer {
